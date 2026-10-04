@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog - Web Development and Technology</title>
+    <meta name="description" content="A blog about web development, HTML, CSS, JavaScript and modern technology.">
+
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <nav aria-label="Main navigation">
+        <a href="index.html" class="logo">MyBlog</a>
+
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>Welcome to MyBlog</h1>
+        <p>Learn about web development, programming and technology.</p>
+    </section>
+
+    <section class="search-section" aria-labelledby="search-heading">
+        <h2 id="search-heading">Search Blog Posts</h2>
+
+        <label for="searchInput">Search by title</label>
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Enter post title"
+            aria-label="Search blog posts by title"
+        >
+    </section>
+
+    <section id="blog" class="blog-section" aria-labelledby="blog-heading">
+        <h2 id="blog-heading">Latest Blog Posts</h2>
+
+        <div class="blog-grid">
+
+            <article class="blog-card">
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70&fm=webp"
+                    alt="Laptop displaying web development code"
+                    width="900"
+                    height="600"
+                    fetchpriority="high"
+                >
+
+                <div class="card-content">
+                    <p class="date">September 20, 2026</p>
+                    <h3>Introduction to Web Development</h3>
+                    <p>Learn the basics of HTML, CSS and JavaScript.</p>
+                    <a href="post1.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img
+                    src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?auto=format&fit=crop&w=900&q=70&fm=webp"
+                    alt="HTML code displayed on a computer screen"
+                    width="900"
+                    height="600"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+                    <p class="date">September 18, 2026</p>
+                    <h3>Getting Started with HTML</h3>
+                    <p>Understand the basic structure of an HTML webpage.</p>
+                    <a href="post2.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img
+                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=70&fm=webp"
+                    alt="Programming code on a computer screen"
+                    width="900"
+                    height="600"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+                    <p class="date">September 15, 2026</p>
+                    <h3>Why Learn JavaScript?</h3>
+                    <p>Discover how JavaScript makes websites interactive.</p>
+                    <a href="post3.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70&fm=webp"
+                    alt="Developer working with programming code"
+                    width="900"
+                    height="600"
+                    loading="lazy"
+                >
+
+                <div class="card-content">
+                    <p class="date">September 12, 2026</p>
+                    <h3>Responsive Web Design</h3>
+                    <p>Learn how to make websites work on different screen sizes.</p>
+                    <a href="post4.html">Read More</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" aria-live="polite">No posts found.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 MyBlog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

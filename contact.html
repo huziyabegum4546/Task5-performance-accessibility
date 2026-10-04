@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | MyBlog</title>
+    <meta name="description" content="Contact MyBlog for questions, suggestions and feedback.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav aria-label="Main navigation">
+        <a href="index.html" class="logo">MyBlog</a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-section" aria-labelledby="contact-heading">
+
+        <h1 id="contact-heading">Contact Us</h1>
+
+        <form>
+
+            <div>
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 MyBlog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
